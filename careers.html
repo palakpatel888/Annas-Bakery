@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+
+<html>
+
+
+<head>
+<title>Anna's-Bakery</title>
+
+<link rel="stylesheet" href="bakerylayout.css">
+<meta name="viewport" content="width=1.0, initial-scale=1.0">
+<meta charset = "utf-8">
+
+<!--[if lt IE 91>
+<script scr"http://html5shim.googlecode.com/svn/trunk/html5.js">
+</script>
+<![endif]-->
+
+<script type="text/javascript">
+alert("Click ok to go to our application page!");
+window.onbeforeunload = function()
+{
+   return "you are leaving our applications page, your information will not be saved";
+};
+
+
+</script>
+</head>
+
+<body>
+<header>
+<h1>Anna's Bakery - Careers</h1>
+</header>
+
+<nav>
+<ul>
+<li><a href="index.html" class = "class1">Home</a></li>
+<li><a href="menu.html" class = "class1">Menu</a></li>
+<li><a href="story.html" class = "class1">Our Story</a></li>
+<li><a href="location.html" class = "class1">Location</a></li>
+<li><a href="itemofmonth.html" class = "class1">Items of the month</a></li>
+</ul>
+</nav>
+
+<main>
+<div id = "slogan">Join Our Family</div>
+<hr>
+
+<div id = "career">We are always on the look out for qualified individuals to join our team!
+We offer flexible hours and some training if you do not have all of the skills we are looking for.
+If you are looking for training as a cake decorator we reccomend taking wilton courses 1 through 4.
+You can sign up <a href="http://www.joann.com/classes/in-store-classes/food-crafting-classes/" class = "class2">here.</a> 
+<br>
+If you believe you have something to offer and you would like to be apart of a fun work enviroment then 
+apply below</div>
+<hr>
+<br>
+
+<div class = "positions"><p class ="bottomb">--CAKE DECORATOR--</p>
+<p>1+ years of experience, must know how to use fondant, buttercream and royal icing</p>
+<p class ="bottomb">--BAKER--</p>
+<p>Must have experience making cakes, cookies and variety of other pastries</p>
+<p class ="bottomb">--CASHIER--</p>
+<p>No experience necessary however some cashier experience and good interpersonal skills preferred</p>
+<p class ="bottomb">--TRAINING--</p>
+<p> Any futhur training you may need with be discussed during the interview </p>
+</div>
+
+<form method = "post" action = "mailto:palakmpatel888@gmail.com">
+<label for="myFName">* First Name:</label>
+<input type="text" name ="myFName" id = "myFName" required="required">
+<br>
+<label for="myLName">* Last Name:</label>
+<input type="text" name ="myLName" id = "myLName" required="required">
+<br>
+<label for="myEmail">* Email:</label>
+<input type="email" name ="myEmail" id = "myEmail" required="required">
+<br>
+<label for="myPhone">* Phone:</label>
+<input type="tel" name ="myPhone" required="required">
+<br>
+<label for="startDate">* start date:</label>
+<input type="date" name ="startDate" id="startDate" required="required">
+<br>
+<label for="availabity">* hrs/week:</label>
+<input type="number" name ="availabity" id="availabity" min ="1" max ="50" required="required">
+<br>
+<label for="goodFit">* Tell us why you believe you would be a good fit in 200 characters or less</label>
+<textarea name ="goodFit" id = "goodFit" rows="4" cols="20" required="required" maxlength = "200" ></textarea>
+<br>
+<input id = "mySubmit" type="submit" value ="submit">
+</form>
+
+</main>
+
+
+<footer>
+Copyright &copy; 2017 Anna's Bakery
+</br>
+<a href= "mailto:palakmpatel888@gmail.com">palak@patel.com</a>
+</footer>
+
+
+</body>
+</html>
